@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshal Gami</title>
+    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/blog.css">
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bd40e44966.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page blogpage" id="up">
+        <div class="container">
+            <section class="section1">
+                <div class="name"><a href="index.html" style="text-decoration: none;">Harshal Gami</a></div>
+                <div class="title">Blog</div>
+            </section>
+            <div>1. <a href="#post1">How to Add Custom Font in CSS ( Using Downloaded File )</a></div>
+            <div>2. <a href="#post2">Move to top using Jquery</a></div>
+            <div>3. <a href="#post3">Some important website link which help you most</a></div>
+            <section class="section2">
+                <div class="post" id="post1">
+                    <div class="row">
+                        <div>
+                            <div class="title2"><a style="cursor: pointer;">1. How to Add Custom Font in CSS ( Using
+                                    Downloaded File )</a>
+                            </div>
+                            <div class="data">
+                                <p>Here I will show you how to add custom font using download file which is eighter .eot
+                                    or
+                                    .woff or .otf or .svg file formate</p>
+                                <div>
+                                    <div class="step">Step 1 : Download the font</div>
+                                    <div>Download Font File Which You want from brower.</div>
+                                    <div class="step">Step 2 : Put File</div>
+                                    <div>Put the file in website folder. But The file extension must be in .eot or .woff
+                                        or
+                                        .otf or .svg format.</div>
+                                    <div class="step">Step 3 : CSS</div>
+                                    <div>
+                                        add this css in your css file. <br>
+                                        <div class="code">
+                                            @font-face{<br>
+                                            &emsp;font-family: "FontName";<br>
+                                            &emsp;src: url("file-name.file-extension");<br>
+                                            }<br>
+                                        </div>
+                                    </div>
+                                    <div class="step">Step 4 : Declarations</div>
+                                    <div>
+                                        Declare this font-name as you want ... <br>
+                                        <div class="code">
+                                            a{<br>
+                                            &emsp; font-family: "FontName";<br>
+                                            }<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post" id="post2">
+                    <div class="row">
+                        <div>
+                            <div class="title2"><a style="cursor: pointer;">2. Move to top using Jquery</a></div>
+                            <div class="data">
+                                <p>Here I will show you how to add scroll top button using Jquery, Html and Css.</p>
+                                <div>
+                                    <div class="step">Step 1 : Add Jquery File</div>
+                                    <div>You have to add Jquery file in head tag eighter download file or url. I will
+                                        give
+                                        you url link.</div>
+                                    <div>add this css in your head tag.<br>
+                                        <div class="code">&lt;script
+                                            src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;</div>
+                                        <br>
+                                    </div>
+
+                                    <div class="step">Step 2 : Add Html code in body</div>
+                                    <div>Put this Html Code in your body tag. I suggest put it in after &lt;body&gt; so
+                                        you
+                                        can modify at any time.</div>
+                                    <div class="code">&lt;a href="#" class="scrollToTop"&gt;Top&lt;/a&gt;</div><br>
+                                    <div class="step">Step 3 : Add Jquery Code</div>
+                                    <div>
+                                        Add this jquery in your js file for or in script<br>
+                                        <div class="code">
+                                            $(document).ready(function(){<br>
+                                            &emsp;$(window).scroll(function(){<br>
+                                            &emsp;&emsp;if($(this).scrollTop()>100){<br>
+                                            &emsp;&emsp;&emsp;$('.scrollToTop').fadeIn();<br>
+                                            &emsp;&emsp;} else {<br>
+                                            &emsp;&emsp;&emsp;$('.scrollToTop').fadeOut();<br>
+                                            &emsp;&emsp;}<br>
+                                            &emsp;});<br>
+                                            <br>
+                                            &emsp;$('.scrollToTop').click(function(){<br>
+                                            &emsp;&emsp;$('html, body').animate({ scrollTop: 0 });<br>
+                                            &emsp;&emsp;return false; <br>
+                                            &emsp;});<br>
+                                            });<br>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="step">Step 4 : CSS</div>
+                                    <div>You Can add your CSS in page as you want but I will give you a demo here.<br>
+                                        <div class="code">
+                                            .scrollToTop{<br>
+                                            &emsp;position: fixed;<br>
+                                            &emsp;width: 61px;<br>
+                                            &emsp;height: 61px;<br>
+                                            &emsp;line-height: 63px;<br>
+                                            &emsp;border-radius: 100%;<br>
+                                            &emsp;font-size: 25px;<br>
+                                            &emsp;text-align: center;<br>
+                                            &emsp;font-family: EpicRide, serif;<br>
+                                            &emsp;color: #000;<br>
+                                            &emsp;text-decoration: none;<br>
+                                            &emsp;bottom: 25px;<br>
+                                            &emsp;right: 25px;<br>
+                                            &emsp;background-color: #fff;<br>
+                                            &emsp;border: 1px solid rgb(0, 0, 0);<br>
+                                            &emsp;overflow: hidden;<br>
+                                            }<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post" id="post3">
+                    <div class="row">
+                        <div>
+                            <div class="title2"><a style="cursor: pointer;">3. Important Website Link</a></div>
+                            <div class="data">
+                                <div class="step">Send Mail without Email-Id</div>
+                                <div>
+                                    If You want to send a mail or send some file without Email-Id, You just need to go
+                                    in this website <a href="https://emkei.cz/" target="_blank">Here</a>.
+                                    Remember don't send important file from this. Sometime if you can't receive mail
+                                    then check spam box.
+                                </div>
+                                <div class="step pt-2">Temporary Mail with Inbox</div>
+                                <div>When You want give a mail in unknown site then use this website <a
+                                        href="https://www.fakemail.net/" target="_blank">Here</a>. In this you will get
+                                    a temporary mail account with inbox.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section8">
+                <div class="heading">Contact</div>
+                <p>You can reach out to me through <a href="https://www.linkedin.com/in/harshalgami/"><i
+                            class="fab fa-linkedin"></i></a> , <a
+                        href="https://www.instagram.com/___.h_g_patel.___13/"><i class="fab fa-instagram"></i></a> or <a
+                        href="https://github.com/harshalgami13"><i class="fab fa-github"></i></a>. My mail address is <a
+                        class="mail" href="mailto:harshalmgami@gmail.com">harshalmgami@gmail.com</a></p>
+                <br>
+                <div class="copyright">Copyright© 2021 Harshal Gami</div>
+            </section>
+        </div>
+    </div>
+    <div class="top">
+        <a href="#up" class="top">MOVE TOP</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

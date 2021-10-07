@@ -1,0 +1,235 @@
+:root{
+    --background-color: #1d1f21;
+    --main-color: #0fbcd3;
+    --white-color: #c9cacc;
+    --gray-color: #808080;
+    --small-font: 15px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px !important;
+    background-color: #1d1f21;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0fbcd3;
+    border-radius: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap');
+
+/*
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen Mono', monospace;
+*/
+
+body{
+    cursor: default;
+    height: 100%;
+    background-color: #1d1f21 !important;
+    color: #c9cacc !important;
+    font-weight: 400;
+    font-family: 'Oxygen Mono', monospace;
+    line-height: 1.725;
+    flex: 1;
+    letter-spacing: 0.15rem;
+    /* padding-right: 2rem;
+    padding-left: 2rem; */
+    margin: 0 auto;
+}
+.page{
+    padding: 4rem 0;
+}
+section{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.section1 .name{
+    font-family: 'Oxygen Mono', monospace;
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.section1 .title{
+    color: var(--gray-color);
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Oxygen Mono', monospace;
+}
+.heading{
+    color: var(--main-color);
+    font-weight: 700 !important;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+    font-size: 22px;
+    font-family: 'Oxygen Mono', monospace;
+}
+section{
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    text-align: justify;
+}
+.section2{
+    font-weight: 400;
+}
+.title2{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 15px;
+    color: whitesmoke;
+}
+.morelink{
+    display: none;
+}
+.section4 .more a:hover{
+    color: var(--white-color) !important;
+}
+.section5 .bars{
+    margin-bottom: 15px;
+}
+.section5 .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.section5 .line{
+    height: 1px;
+    width: 100%;
+    border-radius: 5px;
+    background: #4e4e4e;
+    position: relative;
+}
+.section5 span{
+    color: var(--white-color);
+}
+.section5 .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.section5 .html::before {
+    width: 95%;
+    border-radius: 5px;
+    background-color: var(--white-color);
+}
+.section5 .angular::before {
+    width: 80%;
+    border-radius: 5px;
+    background-color: var(--white-color)
+}
+.section5 .Jquery::before {
+    width: 85%;
+    border-radius: 5px;
+    background-color: var(--white-color)
+}
+.section5 .Node::before {
+    width: 65%;
+    border-radius: 5px;
+    background-color: var(--white-color)
+}
+.section5 .MongoDb::before {
+    width: 72%;
+    border-radius: 5px;
+    background-color: var(--white-color)
+}
+
+.section6 img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section7 img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+.section7 .step{
+    /* margin-top: 10px ; */
+    color: #41d841;
+}
+.section7 .code{
+    color: #c9cacc;
+    margin: 10px 0;
+    background-color: #c5c5c510;
+    border-left: 5px solid #a7a5a5; 
+    padding: 0 15px;
+}
+.mail{
+    border-radius: 5px;
+    border: 1px dotted var(--white-color);
+    padding: 1px 5px;
+}
+.mail:hover{
+    color: var(--white-color) !important;
+}
+.copyright{
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    font-weight: 300 !important;
+}
+.top a{
+    text-align: center;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+.top:hover{
+    color: var(--white-color) !important;
+}
+.lan{
+    margin-bottom: 5px;
+    line-height: 2rem;
+}
+.language{
+    color: #41d841;
+    border-radius: 5px;
+    border: 1px solid #41d841;
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.responsive{
+    margin-bottom: 5px;
+    color: #d8a341;
+    border-radius: 5px;
+    border: 1px solid #d8a341;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.morepost1{
+    display: none;
+}
+
+
+
+.section5 .progress-bar{
+    background-color: transparent !important;
+}
+ul{
+    padding: 0 !important;
+}
+p{
+    font-size: var(--small-font);
+}
+a{
+    color: var(--white-color) !important;
+}
+a:hover{
+    color: var(--main-color) !important;
+}
+li{
+    list-style: none;
+}
+::selection{
+    background-color: #434452;
+    color: white;
+}
